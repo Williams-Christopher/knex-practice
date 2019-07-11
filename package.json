@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug": "ndb nodemon src/server.js",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
+    "debug": "ndb nodemon src/practice.js",
+    "dev": "nodemon src/practice.js",
+    "start": "node src/practice.js",
     "test": "mocha --require test/setup.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
@@ -19,7 +19,9 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "helmet": "^3.18.0",
-    "morgan": "^1.9.1"
+    "knex": "^0.18.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
